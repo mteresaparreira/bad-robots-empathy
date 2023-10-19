@@ -40,4 +40,9 @@
 
 The results from each model - is logged on an external folder - `results_modelName_`  
 
+* `badnet/`: A model based on [BADNet](https://arxiv.org/pdf/2303.04835.pdf) consists of the following:
+    * `createDataset.py`: that is used to create the dataset for the BADNet model.  It reads & processes all the participant video frames (from the responseVideos) of `224x224` pixel format based on a given `fps` value and stores them as a 'numpy.ndarray' value file.
+    NOTE: Due to memory limitations, the dataset has been generated so as to create dataset for individual participants that are all appended together into a single `.npy` file. For the final dataset, the user would have to append the datasets of all participants together.
+    * `read_frames_from_npy`: Used as a sanity check to ensure the dataset has been created correctly. It displays the frames of the response videos after readings the pixel values from each participant folder.
+
 NOTE: Change the directories as needed - based on the data made available.

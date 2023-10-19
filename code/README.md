@@ -27,7 +27,7 @@
 
     Each model has the following scripts:
 
-    - `superBAD_model_original.py`: that has the code to execute the model on the participant data on a number of hyper-parameter combinations to determine the best performing parameter combination.
+    - `superBAD_model_original.py`: that has the code to execute the model on the participant data on a number of hyper-parameter combinations to determine the best performing parameter combination - without and cross-validation folds - and the participant data is non-overlapping.
     - `superBAD_model_k_fold_cv_overlapping_train_val_plot.py`: has the code to execute the model on a given parameter combination on a 5 FOLD cross validation - where the folds have overlapping participant data. This code is used to obtain the plots during the 5 fold CV - to see how the model behaves.  
     Here, the validation dataset is used as the test_data during model training.
 
@@ -36,4 +36,8 @@
 
     - `extract_k_fold_cv_model_output_information.py`: has the code to read through the output log and extract the information into a dataframe - to determine the model's performance and inference.  
 
-    For faster model execution, the models were parallezied to run based on the `sequence_length` (i.e.: `lookback` length) - as a result, there are files in the `analysis` - consists of scripts - `model_script_#_initial_analysis.ipynb`.
+    For faster model execution, the models were parallezied to run based on the `sequence_length` (a.k.a: `lookback` length) - as a result, there are files in the `analysis` - consists of scripts - `model_script_#_initial_analysis.ipynb`.
+
+The results from each model - is logged on an external folder - `results_modelName_`  
+
+NOTE: Change the directories as needed - based on the data made available.

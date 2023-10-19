@@ -10,7 +10,7 @@ This repository consists of the code used in the SuperBAD project.
 
 The `code` directory consists of sub-directories of the machine learning models that are used in the implementations of various models for multi-label classification of participant reactions to the below classes:
 
-1. Control Videos
+1. Control
 1. Failure - Human
 1. Failure - Robot
 

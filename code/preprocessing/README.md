@@ -53,9 +53,9 @@
 
 * `openFace_features_downsampling.ipynb`: performs downsampling on the OpenFace Extracted features' dataframes
 
-    1. Downsampling - to a specified `sampling_size`
-    1. Preprocesses the downsampled data
+    * Downsampling - to a specified `sampling_size`
+    * Preprocesses the downsampled data
         - Excludes datapoints in `failure videos` which are before the failureOccurrence_timestamp
-    1. Merges `all participants all videos` that are downsampled to a particular `sampling_size` and preprocessed (as per #2)
+    * Merges `all participants all videos` that are downsampled to a particular `sampling_size` and preprocessed.
 
 * `superbad_gradualFailure_counts.py`: obtains the total number of Sudden and Gradual Videos that are present per each class of videos
